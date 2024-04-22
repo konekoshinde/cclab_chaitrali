@@ -17,7 +17,10 @@ const studentSchema = new mongoose.Schema({
         type:String
     },
     dob:{
-        type:String
+        type:Date
+    },
+    MISnumber:{
+        type:Number
     }
 })
 
