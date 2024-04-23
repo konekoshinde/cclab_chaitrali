@@ -12,7 +12,8 @@ export const POST=async(req)=>{
           email:request.email
         },{
             "username":request.username,
-            "dob":request.dob
+            "dob":request.dob,
+            "MISnumber":request.mis
         })
         return Response.json("ok")
     }

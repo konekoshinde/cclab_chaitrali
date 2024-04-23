@@ -22,6 +22,7 @@ export default function Home() {
             "email":session.data.user.email,
             "mis":mis
       })
+      alert("send successfully")
       setdata(null);
     }
     async function get_data(){
@@ -29,7 +30,6 @@ export default function Home() {
         "type":"getInfo",
         "email":session.data.user.email
       })
-      alert("send successfully")
       setdata(res.data);
       console.log(res);
     }
